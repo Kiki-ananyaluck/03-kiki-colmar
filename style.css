@@ -229,6 +229,40 @@ header {
     gap: 8px;
 }
 
+/* for thesis */
+.thesis-article{
+    display: flex;
+}
+.thesis > h2 {
+    padding-top: 32px ;
+}
+
+.article-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 32px 24px;
+}
+.right-thesis {
+    width: 40%;
+    padding-top: 15px;
+}
+
+.article-2 > h3 {
+    margin: 24px 0 8px 0 ;
+    font-size: 2rem;
+}
+
+.article-2 > p {
+    padding-right: 20px;
+    padding-bottom: 32px;
+}
+
+.exhibits {
+    visibility: hidden;
+    position: absolute;
+}
+
 
 
 /* for tablet */
@@ -375,6 +409,42 @@ header {
         padding-top: 8px ;
     }
 
+    /* thesis */
+    .right-thesis {
+        display: none;
+    }
+
+    .article-2 > h3 {
+        display: none;
+    }
+
+    .article-2 > p {
+        display: none;
+    }
+
+    .thesis > h2 {
+        padding: 32px 0 16px 0;
+    }
+
+    .article-2 {
+        width: 100%;
+        margin: 0 0 24px 0;
+    }
+
+    .article-2 > .pic-article-1 {
+        width: 100%; 
+    }
+
+    .exhibit {
+        display: none;
+    }
+
+    .exhibits {
+        visibility: visible;
+        position: static;
+    }
+
+    
 }
 
 /* for smartphone */
