@@ -327,6 +327,10 @@ header {
         padding-left: 16px ;
     }
 
+    .information > .right {
+        width: 100%;
+    }
+
     /* section course */
     
     .course {
@@ -349,12 +353,13 @@ header {
        display: flex;
        flex-direction: column;
        gap: 8px;
+       margin: 0 16px;
     }
 
     .course-item {
-        width: 100%;
         background-color: #D3D3D3;
         gap: 8px;
+        width: 100%;
     }
 
     .course-item:hover {
