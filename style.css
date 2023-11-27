@@ -72,8 +72,43 @@ header {
     height: 100vh;
     background-color: blueviolet;
 }
+/* section hero */
+.hero {
+    background-color: #D3D3D3;
+    display: flex;
+    align-items: center;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+    margin: 24px;
+}
 
-/* for tablets */
+.hero > img {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.hero-text > h3 {
+    font-size: 40px;
+    color: #383838;
+}
+
+.hero-text > p {
+    font-size: 20px;
+    color: #383838;
+}
+
+.hero-text > button {
+    font-size: 20px;
+    padding: 8px 0;
+    background-color: #383838;
+    color: #D3D3D3;
+}
+
+
 @media screen and (max-width: 680px) {
     header {
         height: 90px;
@@ -95,6 +130,42 @@ header {
     .nav-bar-list > li > a:hover {
         font-weight: bold;
         border-bottom: 2px solid black;
+    }
+      /* section hero */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+ 
+    .hero-text {
+         width: 100%;
+         padding: 32px 16px;
+    }
+ 
+    .hero > img {
+         width: 100%;
+         margin: 0;
+    }
+ 
+     .hero-text > h3 {
+        font-size: 35px;
+        color: #383838;
+        display: flex;
+    }
+ 
+     .hero-text > p {
+        font-size: 20px;
+        color: #383838;
+        padding: 32px 0 24px 0;
+    }
+ 
+     .hero-text > button {
+        font-size: 20px;
+        padding: 10px;
+        background-color: #707070;
+        color: white;
+        border: 2px solid #707070;
     }
 
     /* for smartphone */
@@ -128,3 +199,4 @@ header {
         width: 2rem;
     }
 }
+
