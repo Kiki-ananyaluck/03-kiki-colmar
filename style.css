@@ -210,10 +210,11 @@ header {
 .course-item {
     width: 31.78%;
     height: auto;
+    background-color: white;
 }
 
 .course-item:hover {
-    background-color: white;
+    background-color: #D3D3D3;
 }
 
 .pic-course {
