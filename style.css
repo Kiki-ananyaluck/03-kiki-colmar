@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* for header */
+header {
+    display: flex;
+    height: 64px;
+    /* background-color: blue; */
+    align-items: center;
+}
+.nav-container {
+    display: flex;
+    height: 32px;
+    width: 100%;
+   /*  background-color: blueviolet; */
+    justify-content: space-between;
+    margin: 0 24px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.nav-logo > img {
+    width: 100%;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-list {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-bar-list > li {
+    list-style: none;
+}
+
+.nav-bar-list > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-bar-list > li > a:hover {
+    font-weight: bold;
+    border-bottom: 4px solid black;
+}
+
+.nav-phone {
+    visibility: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+/* for tablets */
+@media screen and (max-width: 680px) {
+    header {
+        height: 90px;
+    }
+
+    .nav-container {
+        display: flex; 
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+    }
+
+    .nav-bar-list > li > a {
+        font-size: 18px;
+    }
+
+    .nav-bar-list > li > a:hover {
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+
+    /* for smartphone */
+@media screen and (max-width: 480px) {
+    header {
+        height: 64px;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-phone {
+        visibility: visible;
+        width: 100%;
+    }
+
+    .nav-bar-list-phone {
+        display: flex;
+        width: 100%;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav-bar-list-phone > li {
+        list-style: none;
+    }
+
+    img.nav-for-phone {
+        width: 2rem;
+    }
+}
