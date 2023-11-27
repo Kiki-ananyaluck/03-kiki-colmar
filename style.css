@@ -27,14 +27,12 @@ a {
 header {
     display: flex;
     height: 64px;
-    /* background-color: blue; */
     align-items: center;
 }
 .nav-container {
     display: flex;
     height: 32px;
     width: 100%;
-   /*  background-color: blueviolet; */
     justify-content: space-between;
     margin: 0 24px;
 }
@@ -91,6 +89,7 @@ header {
     height: 100vh;
     background-color: blueviolet;
 }
+
 /* section hero */
 .hero {
     background-color: #D3D3D3;
@@ -130,9 +129,8 @@ header {
     background-color: #707070;
 }
 
-
 /* section information */
-   /* left side */
+   /* left side 0f information  */
 .information {
     display: flex;
 }
@@ -158,8 +156,7 @@ header {
     color: #383838;
 }
 
-/* right side */
-
+   /* right side 0f information */
 .right {
     width: 40%;
     margin-top: 15px;
@@ -193,8 +190,49 @@ header {
     background-color: #D3D3D3 ;
 }
 
+/* for course */
+.course {
+    background-color: #E8E8E8;
+    width: auto;
+    padding: 0 72px 32px 72px;
+}
+
+.course > h2 {
+    padding: 32px 0;
+}
+.course-wrap {
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 32px;
+}
+
+.course-item {
+    width: 31.78%;
+    height: auto;
+}
+
+.course-item:hover {
+    background-color: white;
+}
+
+.pic-course {
+    width: 100%;
+    height: auto;
+}
+
+.course-text {
+    padding: 16px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+/* for tablet */
 @media screen and (max-width: 680px) {
-    /* for header */
+    /* section header */
     header {
         height: 90px;
     }
@@ -274,6 +312,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
 
      .pic-article {
@@ -286,11 +325,55 @@ header {
         width: 100%;
         padding-left: 16px ;
     }
+
+    /* section course */
+    
+    .course {
+        background-color: white;
+        padding: 32px 16px;
+    }
+
+    .pic-course {
+        display: none;
+    }
+
+    .course-text > p {
+        display: none;
+    }
+
+    .course > h2 {
+        padding: 0 0 16px 0;
+    }
+    .course-wrap {
+       display: flex;
+       flex-direction: column;
+       gap: 8px;
+    }
+
+    .course-item {
+        width: 100%;
+        background-color: #D3D3D3;
+        gap: 8px;
+    }
+
+    .course-item:hover {
+       background-color: #707070;
+    }
+
+    .course-text {
+        display: flex;
+        padding: 16 auto 24px 16px;
+    }
+
+    .course-text > h3 {
+        padding-top: 8px ;
+    }
+
 }
 
 /* for smartphone */
 @media screen and (max-width: 480px) {
-    /* for header */
+    /* section header */
    header {
        height: 64px;
    }
