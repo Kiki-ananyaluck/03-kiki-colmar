@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 h3 {
     color:#383838;
     font-size: 24px;
@@ -29,6 +30,7 @@ header {
     height: 64px;
     align-items: center;
 }
+
 .nav-container {
     display: flex;
     height: 32px;
@@ -96,6 +98,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -125,6 +128,7 @@ header {
     background-color: #383838;
     color: #D3D3D3;
 }
+
 .hero-text > button:hover {
     background-color: #707070;
 }
@@ -263,10 +267,37 @@ header {
     position: absolute;
 }
 
+/* for footer */
+footer {
+    display: flex;
+    height: 64px;
+    align-items: center;
+}
+.footer-container {
+    display: flex;
+    height: 32px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 16px 24px;
+}
+.terms {
+    display: flex;
+    gap: 8px;
+}
+
+.terms > a {
+    color: #707070;
+}
+
+.terms > a:hover{
+    text-decoration: underline;
+}
+
 
 
 /* for tablet */
 @media screen and (max-width: 680px) {
+
     /* section header */
     header {
         height: 90px;
@@ -293,6 +324,7 @@ header {
     .hero-text > button:hover {
         background-color:#383838;
     }
+
       /* section hero */
     .hero {
         display: flex;
@@ -444,11 +476,19 @@ header {
         position: static;
     }
 
-    
+    /* for footer */
+    .terms {
+        display: none;
+        padding: 16px;
+   }
+   hr {
+       display: none;
+   } 
 }
 
 /* for smartphone */
 @media screen and (max-width: 480px) {
+
     /* section header */
    header {
        height: 64px;
